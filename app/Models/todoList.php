@@ -8,4 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class todoList extends Model
 {
     use HasFactory;
+    protected $fillable = ['content'];
 }
