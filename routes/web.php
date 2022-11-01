@@ -17,3 +17,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/',[TodoListController::class,'index'])->name('index');
 Route::post('/',[TodoListController::class,'store'])->name('store');
 Route::delete('/{todoList:id}',[TodoListController::class,'destroy'])->name('destroy');
+
+Route::get('/shop',App\Http\Livewire\ShopPage::class);
